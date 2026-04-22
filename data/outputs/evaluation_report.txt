@@ -1,0 +1,77 @@
+======================================================================
+INCIDENT INTELLIGENCE PIPELINE — EVALUATION REPORT
+======================================================================
+
+[Dataset Statistics]
+  Total signals    : 150
+  Incident cats    : 5
+  Source types     : alert, log, ticket
+  Signals per category:
+    Authentication Failure             30
+    Deployment Failure                 30
+    Network Outage                     30
+    Performance Degradation            30
+    Security Breach                    30
+
+[Classifier Performance]
+  Metric           Classical   Transformer
+  ------------------------------------------
+  Accuracy            0.9000        0.7333
+  Precision           0.9029        0.7300
+  Recall              0.9000        0.7333
+  F1                  0.8965        0.7260
+
+  Classical — per-class breakdown:
+                             precision    recall  f1-score   support
+    
+     Authentication Failure       1.00      0.83      0.91         6
+         Deployment Failure       0.86      1.00      0.92         6
+             Network Outage       0.80      0.67      0.73         6
+    Performance Degradation       1.00      1.00      1.00         6
+            Security Breach       0.86      1.00      0.92         6
+    
+                   accuracy                           0.90        30
+                  macro avg       0.90      0.90      0.90        30
+               weighted avg       0.90      0.90      0.90        30
+
+  Transformer — per-class breakdown:
+                             precision    recall  f1-score   support
+    
+     Authentication Failure       0.67      0.67      0.67         6
+         Deployment Failure       0.60      0.50      0.55         6
+             Network Outage       0.80      0.67      0.73         6
+    Performance Degradation       0.75      1.00      0.86         6
+            Security Breach       0.83      0.83      0.83         6
+    
+                   accuracy                           0.73        30
+                  macro avg       0.73      0.73      0.73        30
+               weighted avg       0.73      0.73      0.73        30
+
+[Similarity Evaluation]
+  Total pairs above threshold  : 440
+  True positives (same inc.)   : 13
+  False positives (diff inc.)  : 427
+  Similarity precision         : 0.0295
+  Avg score — same incident    : 0.5915
+  Avg score — diff incident    : 0.6678
+
+[Correlation Metrics]
+  Total groups       : 45
+  Perfect groups     : 45
+  Fragmented groups  : 0
+  Signals in groups  : 124
+  Pair precision     : 1.0000
+  Pair recall        : 0.7533
+  F1                 : 0.8593
+  Avg confidence     : 0.7058
+  Avg group size     : 2.8 signals
+  Avg time span      : 12.0 min
+
+[Threshold Sensitivity — Correlation Performance]
+   Threshold   Precision    Recall        F1
+  ----------------------------------------------
+        0.50      1.0000    0.0730    0.1370
+        0.35      1.0000    0.3600    0.5290
+        0.25      1.0000    0.7530    0.8590
+
+======================================================================

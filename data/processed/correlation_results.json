@@ -1,0 +1,1545 @@
+[
+  {
+    "group_id": "CORR-001",
+    "signal_ids": [
+      "INC-0050-S0",
+      "INC-0050-S1",
+      "INC-0050-S2"
+    ],
+    "predicted_category": "Security Breach",
+    "signal_count": 3,
+    "source_types": [
+      "alert",
+      "log",
+      "ticket"
+    ],
+    "time_span_minutes": 13.1,
+    "avg_similarity": 0.3029,
+    "max_anomaly_score": 1.0,
+    "confidence_score": 0.8151,
+    "signals_detail": [
+      {
+        "signal_id": "INC-0050-S0",
+        "source_type": "ticket",
+        "text_snippet": "Unusual file access pattern detected \u2014 8 sensitive files accessed in 5m"
+      },
+      {
+        "signal_id": "INC-0050-S1",
+        "source_type": "alert",
+        "text_snippet": "CRITICAL: 22 failed login attempts from IP 90 \u2014 brute force detected"
+      },
+      {
+        "signal_id": "INC-0050-S2",
+        "source_type": "log",
+        "text_snippet": "WARN audit-logger Privilege escalation: user 96 accessed admin endpoint. Additio"
+      }
+    ]
+  },
+  {
+    "group_id": "CORR-002",
+    "signal_ids": [
+      "INC-0013-S0",
+      "INC-0013-S1",
+      "INC-0013-S2"
+    ],
+    "predicted_category": "Network Outage",
+    "signal_count": 3,
+    "source_types": [
+      "alert",
+      "log",
+      "ticket"
+    ],
+    "time_span_minutes": 14.12,
+    "avg_similarity": 0.3873,
+    "max_anomaly_score": 0.9205,
+    "confidence_score": 0.7826,
+    "signals_detail": [
+      {
+        "signal_id": "INC-0013-S0",
+        "source_type": "ticket",
+        "text_snippet": "Internet connectivity down in office building 93 \u2014 no network access"
+      },
+      {
+        "signal_id": "INC-0013-S1",
+        "source_type": "log",
+        "text_snippet": "ERROR tcp-handler Connection reset by peer \u2014 36 retries exhausted. Additionally:"
+      },
+      {
+        "signal_id": "INC-0013-S2",
+        "source_type": "alert",
+        "text_snippet": "CRITICAL: datacenter east-92 connectivity lost \u2014 failover initiated. Additionall"
+      }
+    ]
+  },
+  {
+    "group_id": "CORR-003",
+    "signal_ids": [
+      "INC-0022-S0",
+      "INC-0022-S1",
+      "INC-0022-S2"
+    ],
+    "predicted_category": "Deployment Failure",
+    "signal_count": 3,
+    "source_types": [
+      "alert",
+      "log",
+      "ticket"
+    ],
+    "time_span_minutes": 7.34,
+    "avg_similarity": 0.4683,
+    "max_anomaly_score": 0.5856,
+    "confidence_score": 0.7749,
+    "signals_detail": [
+      {
+        "signal_id": "INC-0022-S0",
+        "source_type": "alert",
+        "text_snippet": "CRITICAL: deployment pipeline 95 failed at stage 41 \u2014 rollback triggered"
+      },
+      {
+        "signal_id": "INC-0022-S1",
+        "source_type": "ticket",
+        "text_snippet": "CI/CD pipeline deployment stuck for 15 minutes \u2014 manual intervention needed"
+      },
+      {
+        "signal_id": "INC-0022-S2",
+        "source_type": "log",
+        "text_snippet": "ERROR helm-deploy Release 96 failed: timed out waiting for condition"
+      }
+    ]
+  },
+  {
+    "group_id": "CORR-004",
+    "signal_ids": [
+      "INC-0021-S0",
+      "INC-0021-S1",
+      "INC-0021-S2"
+    ],
+    "predicted_category": "Deployment Failure",
+    "signal_count": 3,
+    "source_types": [
+      "alert",
+      "log",
+      "ticket"
+    ],
+    "time_span_minutes": 10.72,
+    "avg_similarity": 0.3753,
+    "max_anomaly_score": 0.5856,
+    "confidence_score": 0.7638,
+    "signals_detail": [
+      {
+        "signal_id": "INC-0021-S0",
+        "source_type": "log",
+        "text_snippet": "WARN rollout-controller Deployment 95 exceeded progress deadline 20m"
+      },
+      {
+        "signal_id": "INC-0021-S1",
+        "source_type": "ticket",
+        "text_snippet": "Config change pushed at 18:12 caused database connection failures"
+      },
+      {
+        "signal_id": "INC-0021-S2",
+        "source_type": "alert",
+        "text_snippet": "CRITICAL: deployment pipeline 98 failed at stage 36 \u2014 rollback triggered"
+      }
+    ]
+  },
+  {
+    "group_id": "CORR-005",
+    "signal_ids": [
+      "INC-0037-S0",
+      "INC-0037-S2"
+    ],
+    "predicted_category": "Performance Degradation",
+    "signal_count": 2,
+    "source_types": [
+      "alert",
+      "ticket"
+    ],
+    "time_span_minutes": 10.96,
+    "avg_similarity": 0.354,
+    "max_anomaly_score": 0.9205,
+    "confidence_score": 0.7592,
+    "signals_detail": [
+      {
+        "signal_id": "INC-0037-S0",
+        "source_type": "ticket",
+        "text_snippet": "Dashboard loading very slowly \u2014 timeout errors appearing for heavy reports"
+      },
+      {
+        "signal_id": "INC-0037-S2",
+        "source_type": "alert",
+        "text_snippet": "CRITICAL: cache_hit_rate dropped to 13% \u2014 database under heavy load. Additionall"
+      }
+    ]
+  },
+  {
+    "group_id": "CORR-006",
+    "signal_ids": [
+      "INC-0002-S0",
+      "INC-0002-S1",
+      "INC-0002-S2"
+    ],
+    "predicted_category": "Authentication Failure",
+    "signal_count": 3,
+    "source_types": [
+      "alert",
+      "log",
+      "ticket"
+    ],
+    "time_span_minutes": 5.29,
+    "avg_similarity": 0.3863,
+    "max_anomaly_score": 0.4505,
+    "confidence_score": 0.7567,
+    "signals_detail": [
+      {
+        "signal_id": "INC-0002-S0",
+        "source_type": "alert",
+        "text_snippet": "WARNING: 19 failed authentication attempts detected in 10 minute window"
+      },
+      {
+        "signal_id": "INC-0002-S1",
+        "source_type": "log",
+        "text_snippet": "ERROR AuthService TokenValidationException: JWT signature invalid at 02:24. Addi"
+      },
+      {
+        "signal_id": "INC-0002-S2",
+        "source_type": "ticket",
+        "text_snippet": "Password reset not working \u2014 users locked out of system since 03:59"
+      }
+    ]
+  },
+  {
+    "group_id": "CORR-007",
+    "signal_ids": [
+      "INC-0009-S0",
+      "INC-0009-S1",
+      "INC-0009-S2"
+    ],
+    "predicted_category": "Authentication Failure",
+    "signal_count": 3,
+    "source_types": [
+      "alert",
+      "log",
+      "ticket"
+    ],
+    "time_span_minutes": 8.45,
+    "avg_similarity": 0.3435,
+    "max_anomaly_score": 0.4505,
+    "confidence_score": 0.7567,
+    "signals_detail": [
+      {
+        "signal_id": "INC-0009-S0",
+        "source_type": "log",
+        "text_snippet": "WARN ldap-connector Authentication bind failed for user pool \u2014 retrying"
+      },
+      {
+        "signal_id": "INC-0009-S1",
+        "source_type": "alert",
+        "text_snippet": "WARNING: 35 failed authentication attempts detected in 30 minute window"
+      },
+      {
+        "signal_id": "INC-0009-S2",
+        "source_type": "ticket",
+        "text_snippet": "Password reset not working \u2014 users locked out of system since 23:44"
+      }
+    ]
+  },
+  {
+    "group_id": "CORR-008",
+    "signal_ids": [
+      "INC-0029-S0",
+      "INC-0029-S1"
+    ],
+    "predicted_category": "Deployment Failure",
+    "signal_count": 2,
+    "source_types": [
+      "log",
+      "ticket"
+    ],
+    "time_span_minutes": 20.29,
+    "avg_similarity": 0.3022,
+    "max_anomaly_score": 0.9205,
+    "confidence_score": 0.7541,
+    "signals_detail": [
+      {
+        "signal_id": "INC-0029-S0",
+        "source_type": "ticket",
+        "text_snippet": "Config change pushed at 07:17 caused database connection failures"
+      },
+      {
+        "signal_id": "INC-0029-S1",
+        "source_type": "log",
+        "text_snippet": "ERROR helm-deploy Release 96 failed: timed out waiting for condition"
+      }
+    ]
+  },
+  {
+    "group_id": "CORR-009",
+    "signal_ids": [
+      "INC-0045-S0",
+      "INC-0045-S1",
+      "INC-0045-S2"
+    ],
+    "predicted_category": "Security Breach",
+    "signal_count": 3,
+    "source_types": [
+      "alert",
+      "log",
+      "ticket"
+    ],
+    "time_span_minutes": 22.48,
+    "avg_similarity": 0.3097,
+    "max_anomaly_score": 0.5856,
+    "confidence_score": 0.7494,
+    "signals_detail": [
+      {
+        "signal_id": "INC-0045-S0",
+        "source_type": "log",
+        "text_snippet": "CRITICAL security-monitor Brute force: 17 auth failures from 99 in 10m"
+      },
+      {
+        "signal_id": "INC-0045-S1",
+        "source_type": "ticket",
+        "text_snippet": "Unusual file access pattern detected \u2014 7 sensitive files accessed in 10m"
+      },
+      {
+        "signal_id": "INC-0045-S2",
+        "source_type": "alert",
+        "text_snippet": "WARNING: 9 API calls from unrecognised IP range in last 10 minutes"
+      }
+    ]
+  },
+  {
+    "group_id": "CORR-010",
+    "signal_ids": [
+      "INC-0047-S0",
+      "INC-0047-S1",
+      "INC-0047-S2"
+    ],
+    "predicted_category": "Security Breach",
+    "signal_count": 3,
+    "source_types": [
+      "alert",
+      "log",
+      "ticket"
+    ],
+    "time_span_minutes": 15.9,
+    "avg_similarity": 0.3323,
+    "max_anomaly_score": 0.3721,
+    "confidence_score": 0.7482,
+    "signals_detail": [
+      {
+        "signal_id": "INC-0047-S0",
+        "source_type": "ticket",
+        "text_snippet": "User reported receiving password reset email they did not request at 14:34"
+      },
+      {
+        "signal_id": "INC-0047-S1",
+        "source_type": "log",
+        "text_snippet": "ERROR access-control Unauthorised access to /api/admin/users \u2014 blocked at 12:29"
+      },
+      {
+        "signal_id": "INC-0047-S2",
+        "source_type": "alert",
+        "text_snippet": "ALERT: SQL injection pattern detected in 17 requests \u2014 WAF blocking"
+      }
+    ]
+  },
+  {
+    "group_id": "CORR-011",
+    "signal_ids": [
+      "INC-0007-S0",
+      "INC-0007-S1",
+      "INC-0007-S2"
+    ],
+    "predicted_category": "Authentication Failure",
+    "signal_count": 3,
+    "source_types": [
+      "alert",
+      "log",
+      "ticket"
+    ],
+    "time_span_minutes": 14.56,
+    "avg_similarity": 0.3228,
+    "max_anomaly_score": 0.4505,
+    "confidence_score": 0.743,
+    "signals_detail": [
+      {
+        "signal_id": "INC-0007-S0",
+        "source_type": "log",
+        "text_snippet": "WARN ldap-connector Authentication bind failed for user pool \u2014 retrying"
+      },
+      {
+        "signal_id": "INC-0007-S1",
+        "source_type": "alert",
+        "text_snippet": "ALERT: auth_error_rate exceeded threshold \u2014 current value 2% up from baseline 97"
+      },
+      {
+        "signal_id": "INC-0007-S2",
+        "source_type": "ticket",
+        "text_snippet": "Cannot access internal portal \u2014 getting 401 Unauthorized since this morning"
+      }
+    ]
+  },
+  {
+    "group_id": "CORR-012",
+    "signal_ids": [
+      "INC-0048-S0",
+      "INC-0048-S1",
+      "INC-0048-S2"
+    ],
+    "predicted_category": "Security Breach",
+    "signal_count": 3,
+    "source_types": [
+      "alert",
+      "log",
+      "ticket"
+    ],
+    "time_span_minutes": 3.44,
+    "avg_similarity": 0.306,
+    "max_anomaly_score": 0.3819,
+    "confidence_score": 0.7421,
+    "signals_detail": [
+      {
+        "signal_id": "INC-0048-S0",
+        "source_type": "alert",
+        "text_snippet": "ALERT: SQL injection pattern detected in 26 requests \u2014 WAF blocking"
+      },
+      {
+        "signal_id": "INC-0048-S1",
+        "source_type": "ticket",
+        "text_snippet": "Security scanner flagged 11 critical vulnerabilities in production at 15:02. Add"
+      },
+      {
+        "signal_id": "INC-0048-S2",
+        "source_type": "log",
+        "text_snippet": "CRITICAL ids-system Port scan detected from external IP 90 at 23:09"
+      }
+    ]
+  },
+  {
+    "group_id": "CORR-013",
+    "signal_ids": [
+      "INC-0006-S0",
+      "INC-0006-S1",
+      "INC-0006-S2"
+    ],
+    "predicted_category": "Authentication Failure",
+    "signal_count": 3,
+    "source_types": [
+      "alert",
+      "log",
+      "ticket"
+    ],
+    "time_span_minutes": 19.93,
+    "avg_similarity": 0.3959,
+    "max_anomaly_score": 0.4328,
+    "confidence_score": 0.7404,
+    "signals_detail": [
+      {
+        "signal_id": "INC-0006-S0",
+        "source_type": "alert",
+        "text_snippet": "ALERT: auth_error_rate exceeded threshold \u2014 current value 45% up from baseline 9"
+      },
+      {
+        "signal_id": "INC-0006-S1",
+        "source_type": "log",
+        "text_snippet": "CRITICAL auth-middleware NullPointerException in validateToken() line 847"
+      },
+      {
+        "signal_id": "INC-0006-S2",
+        "source_type": "ticket",
+        "text_snippet": "Cannot access internal portal \u2014 getting 401 Unauthorized since this morning"
+      }
+    ]
+  },
+  {
+    "group_id": "CORR-014",
+    "signal_ids": [
+      "INC-0008-S0",
+      "INC-0008-S1",
+      "INC-0008-S2"
+    ],
+    "predicted_category": "Authentication Failure",
+    "signal_count": 3,
+    "source_types": [
+      "alert",
+      "log",
+      "ticket"
+    ],
+    "time_span_minutes": 19.91,
+    "avg_similarity": 0.3727,
+    "max_anomaly_score": 0.331,
+    "confidence_score": 0.7387,
+    "signals_detail": [
+      {
+        "signal_id": "INC-0008-S0",
+        "source_type": "alert",
+        "text_snippet": "ALERT: auth_error_rate exceeded threshold \u2014 current value 12% up from baseline 9"
+      },
+      {
+        "signal_id": "INC-0008-S1",
+        "source_type": "ticket",
+        "text_snippet": "Password reset not working \u2014 users locked out of system since 00:38"
+      },
+      {
+        "signal_id": "INC-0008-S2",
+        "source_type": "log",
+        "text_snippet": "ERROR sso-service Connection refused to identity-provider at 09:15. Additionally"
+      }
+    ]
+  },
+  {
+    "group_id": "CORR-015",
+    "signal_ids": [
+      "INC-0025-S0",
+      "INC-0025-S1",
+      "INC-0025-S2"
+    ],
+    "predicted_category": "Deployment Failure",
+    "signal_count": 3,
+    "source_types": [
+      "alert",
+      "log",
+      "ticket"
+    ],
+    "time_span_minutes": 8.46,
+    "avg_similarity": 0.4643,
+    "max_anomaly_score": 0.4838,
+    "confidence_score": 0.7382,
+    "signals_detail": [
+      {
+        "signal_id": "INC-0025-S0",
+        "source_type": "ticket",
+        "text_snippet": "CI/CD pipeline deployment stuck for 20 minutes \u2014 manual intervention needed"
+      },
+      {
+        "signal_id": "INC-0025-S1",
+        "source_type": "log",
+        "text_snippet": "WARN rollout-controller Deployment 90 exceeded progress deadline 5m"
+      },
+      {
+        "signal_id": "INC-0025-S2",
+        "source_type": "alert",
+        "text_snippet": "CRITICAL: kubernetes rollout failed \u2014 35 pods in CrashLoopBackOff"
+      }
+    ]
+  },
+  {
+    "group_id": "CORR-016",
+    "signal_ids": [
+      "INC-0041-S0",
+      "INC-0041-S2"
+    ],
+    "predicted_category": "Security Breach",
+    "signal_count": 2,
+    "source_types": [
+      "alert",
+      "log"
+    ],
+    "time_span_minutes": 8.79,
+    "avg_similarity": 0.3577,
+    "max_anomaly_score": 0.5856,
+    "confidence_score": 0.7373,
+    "signals_detail": [
+      {
+        "signal_id": "INC-0041-S0",
+        "source_type": "alert",
+        "text_snippet": "WARNING: 9 API calls from unrecognised IP range in last 30 minutes"
+      },
+      {
+        "signal_id": "INC-0041-S2",
+        "source_type": "log",
+        "text_snippet": "CRITICAL ids-system Port scan detected from external IP 94 at 22:25"
+      }
+    ]
+  },
+  {
+    "group_id": "CORR-017",
+    "signal_ids": [
+      "INC-0024-S0",
+      "INC-0024-S1",
+      "INC-0024-S2"
+    ],
+    "predicted_category": "Deployment Failure",
+    "signal_count": 3,
+    "source_types": [
+      "alert",
+      "log",
+      "ticket"
+    ],
+    "time_span_minutes": 11.6,
+    "avg_similarity": 0.2954,
+    "max_anomaly_score": 0.5347,
+    "confidence_score": 0.7342,
+    "signals_detail": [
+      {
+        "signal_id": "INC-0024-S0",
+        "source_type": "ticket",
+        "text_snippet": "Deployment to prod failed \u2014 application not starting after update at 16:42"
+      },
+      {
+        "signal_id": "INC-0024-S1",
+        "source_type": "alert",
+        "text_snippet": "ALERT: error_rate spiked to 16% immediately after release v94"
+      },
+      {
+        "signal_id": "INC-0024-S2",
+        "source_type": "log",
+        "text_snippet": "ERROR kubernetes PodInitializing timeout after 10m \u2014 CrashLoopBackOff"
+      }
+    ]
+  },
+  {
+    "group_id": "CORR-018",
+    "signal_ids": [
+      "INC-0046-S0",
+      "INC-0046-S1",
+      "INC-0046-S2"
+    ],
+    "predicted_category": "Security Breach",
+    "signal_count": 3,
+    "source_types": [
+      "alert",
+      "log",
+      "ticket"
+    ],
+    "time_span_minutes": 12.01,
+    "avg_similarity": 0.4218,
+    "max_anomaly_score": 0.3819,
+    "confidence_score": 0.7325,
+    "signals_detail": [
+      {
+        "signal_id": "INC-0046-S0",
+        "source_type": "ticket",
+        "text_snippet": "Unusual file access pattern detected \u2014 17 sensitive files accessed in 20m"
+      },
+      {
+        "signal_id": "INC-0046-S1",
+        "source_type": "log",
+        "text_snippet": "ERROR access-control Unauthorised access to /api/admin/users \u2014 blocked at 16:47"
+      },
+      {
+        "signal_id": "INC-0046-S2",
+        "source_type": "alert",
+        "text_snippet": "CRITICAL: privilege escalation attempt detected for user account at 13:21"
+      }
+    ]
+  },
+  {
+    "group_id": "CORR-019",
+    "signal_ids": [
+      "INC-0014-S0",
+      "INC-0014-S1",
+      "INC-0014-S2"
+    ],
+    "predicted_category": "Network Outage",
+    "signal_count": 3,
+    "source_types": [
+      "alert",
+      "log",
+      "ticket"
+    ],
+    "time_span_minutes": 9.49,
+    "avg_similarity": 0.3301,
+    "max_anomaly_score": 0.3819,
+    "confidence_score": 0.732,
+    "signals_detail": [
+      {
+        "signal_id": "INC-0014-S0",
+        "source_type": "log",
+        "text_snippet": "ERROR tcp-handler Connection reset by peer \u2014 7 retries exhausted"
+      },
+      {
+        "signal_id": "INC-0014-S1",
+        "source_type": "alert",
+        "text_snippet": "CRITICAL: datacenter east-95 connectivity lost \u2014 failover initiated"
+      },
+      {
+        "signal_id": "INC-0014-S2",
+        "source_type": "ticket",
+        "text_snippet": "All microservices returning 503 \u2014 suspected network partition in cluster"
+      }
+    ]
+  },
+  {
+    "group_id": "CORR-020",
+    "signal_ids": [
+      "INC-0003-S0",
+      "INC-0003-S1",
+      "INC-0003-S2"
+    ],
+    "predicted_category": "Authentication Failure",
+    "signal_count": 3,
+    "source_types": [
+      "alert",
+      "log",
+      "ticket"
+    ],
+    "time_span_minutes": 18.33,
+    "avg_similarity": 0.3136,
+    "max_anomaly_score": 0.331,
+    "confidence_score": 0.7251,
+    "signals_detail": [
+      {
+        "signal_id": "INC-0003-S0",
+        "source_type": "log",
+        "text_snippet": "WARN ldap-connector Authentication bind failed for user pool \u2014 retrying. Additio"
+      },
+      {
+        "signal_id": "INC-0003-S1",
+        "source_type": "ticket",
+        "text_snippet": "Cannot access internal portal \u2014 getting 401 Unauthorized since this morning"
+      },
+      {
+        "signal_id": "INC-0003-S2",
+        "source_type": "alert",
+        "text_snippet": "ALERT: auth_error_rate exceeded threshold \u2014 current value 24% up from baseline 9"
+      }
+    ]
+  },
+  {
+    "group_id": "CORR-021",
+    "signal_ids": [
+      "INC-0028-S0",
+      "INC-0028-S2"
+    ],
+    "predicted_category": "Deployment Failure",
+    "signal_count": 2,
+    "source_types": [
+      "alert",
+      "log"
+    ],
+    "time_span_minutes": 1.41,
+    "avg_similarity": 0.7932,
+    "max_anomaly_score": 0.5856,
+    "confidence_score": 0.7232,
+    "signals_detail": [
+      {
+        "signal_id": "INC-0028-S0",
+        "source_type": "alert",
+        "text_snippet": "CRITICAL: kubernetes rollout failed \u2014 15 pods in CrashLoopBackOff. Additionally:"
+      },
+      {
+        "signal_id": "INC-0028-S2",
+        "source_type": "log",
+        "text_snippet": "ERROR kubernetes PodInitializing timeout after 30m \u2014 CrashLoopBackOff"
+      }
+    ]
+  },
+  {
+    "group_id": "CORR-022",
+    "signal_ids": [
+      "INC-0033-S0",
+      "INC-0033-S1",
+      "INC-0033-S2"
+    ],
+    "predicted_category": "Performance Degradation",
+    "signal_count": 3,
+    "source_types": [
+      "alert",
+      "log",
+      "ticket"
+    ],
+    "time_span_minutes": 11.29,
+    "avg_similarity": 0.394,
+    "max_anomaly_score": 0.4838,
+    "confidence_score": 0.7231,
+    "signals_detail": [
+      {
+        "signal_id": "INC-0033-S0",
+        "source_type": "log",
+        "text_snippet": "WARN connection-pool All 98 connections in use \u2014 requests queuing"
+      },
+      {
+        "signal_id": "INC-0033-S1",
+        "source_type": "alert",
+        "text_snippet": "ALERT: throughput dropped from 95 to 2 requests/sec \u2014 capacity issue"
+      },
+      {
+        "signal_id": "INC-0033-S2",
+        "source_type": "ticket",
+        "text_snippet": "Application extremely slow since 11:40 \u2014 pages taking 29 seconds to load"
+      }
+    ]
+  },
+  {
+    "group_id": "CORR-023",
+    "signal_ids": [
+      "INC-0010-S0",
+      "INC-0010-S1",
+      "INC-0010-S2"
+    ],
+    "predicted_category": "Authentication Failure",
+    "signal_count": 3,
+    "source_types": [
+      "alert",
+      "log",
+      "ticket"
+    ],
+    "time_span_minutes": 12.08,
+    "avg_similarity": 0.4517,
+    "max_anomaly_score": 0.2801,
+    "confidence_score": 0.7175,
+    "signals_detail": [
+      {
+        "signal_id": "INC-0010-S0",
+        "source_type": "log",
+        "text_snippet": "ERROR oauth2-handler Token expired: issued 20 minutes ago exceeds limit. Additio"
+      },
+      {
+        "signal_id": "INC-0010-S1",
+        "source_type": "ticket",
+        "text_snippet": "Password reset not working \u2014 users locked out of system since 07:00. Additionall"
+      },
+      {
+        "signal_id": "INC-0010-S2",
+        "source_type": "alert",
+        "text_snippet": "ALERT: auth_error_rate exceeded threshold \u2014 current value 44% up from baseline 9"
+      }
+    ]
+  },
+  {
+    "group_id": "CORR-024",
+    "signal_ids": [
+      "INC-0001-S0",
+      "INC-0001-S1",
+      "INC-0001-S2"
+    ],
+    "predicted_category": "Authentication Failure",
+    "signal_count": 3,
+    "source_types": [
+      "alert",
+      "log",
+      "ticket"
+    ],
+    "time_span_minutes": 21.64,
+    "avg_similarity": 0.498,
+    "max_anomaly_score": 0.2291,
+    "confidence_score": 0.7098,
+    "signals_detail": [
+      {
+        "signal_id": "INC-0001-S0",
+        "source_type": "alert",
+        "text_snippet": "ALERT: auth_error_rate exceeded threshold \u2014 current value 8% up from baseline 92"
+      },
+      {
+        "signal_id": "INC-0001-S1",
+        "source_type": "ticket",
+        "text_snippet": "Users unable to log in since 18:27 \u2014 receiving invalid credentials error. Additi"
+      },
+      {
+        "signal_id": "INC-0001-S2",
+        "source_type": "log",
+        "text_snippet": "WARN auth-gateway 401 Unauthorized /api/v2/login \u2014 43 occurrences in 30m"
+      }
+    ]
+  },
+  {
+    "group_id": "CORR-025",
+    "signal_ids": [
+      "INC-0004-S0",
+      "INC-0004-S1",
+      "INC-0004-S2"
+    ],
+    "predicted_category": "Authentication Failure",
+    "signal_count": 3,
+    "source_types": [
+      "alert",
+      "log",
+      "ticket"
+    ],
+    "time_span_minutes": 10.83,
+    "avg_similarity": 0.2863,
+    "max_anomaly_score": 0.1273,
+    "confidence_score": 0.7082,
+    "signals_detail": [
+      {
+        "signal_id": "INC-0004-S0",
+        "source_type": "log",
+        "text_snippet": "ERROR oauth2-handler Token expired: issued 10 minutes ago exceeds limit. Additio"
+      },
+      {
+        "signal_id": "INC-0004-S1",
+        "source_type": "alert",
+        "text_snippet": "CRITICAL: login_success_rate dropped from 93% to 4% in last 15 minutes"
+      },
+      {
+        "signal_id": "INC-0004-S2",
+        "source_type": "ticket",
+        "text_snippet": "Password reset not working \u2014 users locked out of system since 22:20"
+      }
+    ]
+  },
+  {
+    "group_id": "CORR-026",
+    "signal_ids": [
+      "INC-0032-S0",
+      "INC-0032-S1",
+      "INC-0032-S2"
+    ],
+    "predicted_category": "Performance Degradation",
+    "signal_count": 3,
+    "source_types": [
+      "alert",
+      "log",
+      "ticket"
+    ],
+    "time_span_minutes": 18.26,
+    "avg_similarity": 0.4758,
+    "max_anomaly_score": 0.4838,
+    "confidence_score": 0.7014,
+    "signals_detail": [
+      {
+        "signal_id": "INC-0032-S0",
+        "source_type": "log",
+        "text_snippet": "WARN connection-pool All 91 connections in use \u2014 requests queuing"
+      },
+      {
+        "signal_id": "INC-0032-S1",
+        "source_type": "alert",
+        "text_snippet": "ALERT: throughput dropped from 96 to 27 requests/sec \u2014 capacity issue"
+      },
+      {
+        "signal_id": "INC-0032-S2",
+        "source_type": "ticket",
+        "text_snippet": "System unusable during peak hours \u2014 42 second response times"
+      }
+    ]
+  },
+  {
+    "group_id": "CORR-027",
+    "signal_ids": [
+      "INC-0005-S0",
+      "INC-0005-S1"
+    ],
+    "predicted_category": "Authentication Failure",
+    "signal_count": 2,
+    "source_types": [
+      "log",
+      "ticket"
+    ],
+    "time_span_minutes": 8.97,
+    "avg_similarity": 0.383,
+    "max_anomaly_score": 1.0,
+    "confidence_score": 0.6999,
+    "signals_detail": [
+      {
+        "signal_id": "INC-0005-S0",
+        "source_type": "log",
+        "text_snippet": "ERROR sso-service Connection refused to identity-provider at 04:15"
+      },
+      {
+        "signal_id": "INC-0005-S1",
+        "source_type": "ticket",
+        "text_snippet": "VPN authentication failing for remote workers \u2014 JWT token expired error"
+      }
+    ]
+  },
+  {
+    "group_id": "CORR-028",
+    "signal_ids": [
+      "INC-0030-S0",
+      "INC-0030-S1",
+      "INC-0030-S2"
+    ],
+    "predicted_category": "Deployment Failure",
+    "signal_count": 3,
+    "source_types": [
+      "alert",
+      "log",
+      "ticket"
+    ],
+    "time_span_minutes": 12.63,
+    "avg_similarity": 0.4153,
+    "max_anomaly_score": 0.2801,
+    "confidence_score": 0.696,
+    "signals_detail": [
+      {
+        "signal_id": "INC-0030-S0",
+        "source_type": "ticket",
+        "text_snippet": "Deployment to prod failed \u2014 application not starting after update at 12:20"
+      },
+      {
+        "signal_id": "INC-0030-S1",
+        "source_type": "alert",
+        "text_snippet": "CRITICAL: canary deployment showing 19% error rate \u2014 halting rollout"
+      },
+      {
+        "signal_id": "INC-0030-S2",
+        "source_type": "log",
+        "text_snippet": "ERROR helm-deploy Release 91 failed: timed out waiting for condition"
+      }
+    ]
+  },
+  {
+    "group_id": "CORR-029",
+    "signal_ids": [
+      "INC-0044-S0",
+      "INC-0044-S1",
+      "INC-0044-S2"
+    ],
+    "predicted_category": "Security Breach",
+    "signal_count": 3,
+    "source_types": [
+      "alert",
+      "log",
+      "ticket"
+    ],
+    "time_span_minutes": 12.14,
+    "avg_similarity": 0.3341,
+    "max_anomaly_score": 0.4505,
+    "confidence_score": 0.6949,
+    "signals_detail": [
+      {
+        "signal_id": "INC-0044-S0",
+        "source_type": "log",
+        "text_snippet": "CRITICAL security-monitor Brute force: 18 auth failures from 95 in 15m. Addition"
+      },
+      {
+        "signal_id": "INC-0044-S1",
+        "source_type": "alert",
+        "text_snippet": "WARNING: 28 API calls from unrecognised IP range in last 5 minutes. Additionally"
+      },
+      {
+        "signal_id": "INC-0044-S2",
+        "source_type": "ticket",
+        "text_snippet": "Suspicious login from foreign IP at 06:17 \u2014 account may be compromised"
+      }
+    ]
+  },
+  {
+    "group_id": "CORR-030",
+    "signal_ids": [
+      "INC-0042-S0",
+      "INC-0042-S1",
+      "INC-0042-S2"
+    ],
+    "predicted_category": "Security Breach",
+    "signal_count": 3,
+    "source_types": [
+      "alert",
+      "log",
+      "ticket"
+    ],
+    "time_span_minutes": 14.03,
+    "avg_similarity": 0.5393,
+    "max_anomaly_score": 0.0255,
+    "confidence_score": 0.6935,
+    "signals_detail": [
+      {
+        "signal_id": "INC-0042-S0",
+        "source_type": "alert",
+        "text_snippet": "ALERT: SQL injection pattern detected in 22 requests \u2014 WAF blocking"
+      },
+      {
+        "signal_id": "INC-0042-S1",
+        "source_type": "log",
+        "text_snippet": "ERROR waf-handler SQL injection blocked: malicious payload in request at 21:53"
+      },
+      {
+        "signal_id": "INC-0042-S2",
+        "source_type": "ticket",
+        "text_snippet": "Suspicious login from foreign IP at 21:52 \u2014 account may be compromised"
+      }
+    ]
+  },
+  {
+    "group_id": "CORR-031",
+    "signal_ids": [
+      "INC-0049-S0",
+      "INC-0049-S1",
+      "INC-0049-S2"
+    ],
+    "predicted_category": "Security Breach",
+    "signal_count": 3,
+    "source_types": [
+      "alert",
+      "log",
+      "ticket"
+    ],
+    "time_span_minutes": 15.42,
+    "avg_similarity": 0.3814,
+    "max_anomaly_score": 0.3721,
+    "confidence_score": 0.6909,
+    "signals_detail": [
+      {
+        "signal_id": "INC-0049-S0",
+        "source_type": "ticket",
+        "text_snippet": "Possible data exfiltration \u2014 large upload to external endpoint at 22:25"
+      },
+      {
+        "signal_id": "INC-0049-S1",
+        "source_type": "log",
+        "text_snippet": "WARN data-monitor Anomalous export: 36MB from sensitive table in 20m"
+      },
+      {
+        "signal_id": "INC-0049-S2",
+        "source_type": "alert",
+        "text_snippet": "WARNING: 36 API calls from unrecognised IP range in last 5 minutes"
+      }
+    ]
+  },
+  {
+    "group_id": "CORR-032",
+    "signal_ids": [
+      "INC-0015-S0",
+      "INC-0015-S1",
+      "INC-0015-S2"
+    ],
+    "predicted_category": "Network Outage",
+    "signal_count": 3,
+    "source_types": [
+      "alert",
+      "log",
+      "ticket"
+    ],
+    "time_span_minutes": 8.66,
+    "avg_similarity": 0.3277,
+    "max_anomaly_score": 0.331,
+    "confidence_score": 0.6851,
+    "signals_detail": [
+      {
+        "signal_id": "INC-0015-S0",
+        "source_type": "log",
+        "text_snippet": "ERROR dns-resolver NXDOMAIN for internal service mesh \u2014 5 retries failed. Additi"
+      },
+      {
+        "signal_id": "INC-0015-S1",
+        "source_type": "ticket",
+        "text_snippet": "API calls to external partners timing out \u2014 network issue suspected since 02:56"
+      },
+      {
+        "signal_id": "INC-0015-S2",
+        "source_type": "alert",
+        "text_snippet": "WARNING: BGP session dropped with peer 98 \u2014 rerouting traffic"
+      }
+    ]
+  },
+  {
+    "group_id": "CORR-033",
+    "signal_ids": [
+      "INC-0027-S0",
+      "INC-0027-S1"
+    ],
+    "predicted_category": "Deployment Failure",
+    "signal_count": 2,
+    "source_types": [
+      "log",
+      "ticket"
+    ],
+    "time_span_minutes": 4.81,
+    "avg_similarity": 0.5759,
+    "max_anomaly_score": 0.2801,
+    "confidence_score": 0.6691,
+    "signals_detail": [
+      {
+        "signal_id": "INC-0027-S0",
+        "source_type": "ticket",
+        "text_snippet": "CI/CD pipeline deployment stuck for 15 minutes \u2014 manual intervention needed"
+      },
+      {
+        "signal_id": "INC-0027-S1",
+        "source_type": "log",
+        "text_snippet": "WARN rollout-controller Deployment 93 exceeded progress deadline 15m"
+      }
+    ]
+  },
+  {
+    "group_id": "CORR-034",
+    "signal_ids": [
+      "INC-0031-S0",
+      "INC-0031-S2"
+    ],
+    "predicted_category": "Performance Degradation",
+    "signal_count": 2,
+    "source_types": [
+      "log",
+      "ticket"
+    ],
+    "time_span_minutes": 4.57,
+    "avg_similarity": 0.3819,
+    "max_anomaly_score": 0.9205,
+    "confidence_score": 0.6667,
+    "signals_detail": [
+      {
+        "signal_id": "INC-0031-S0",
+        "source_type": "ticket",
+        "text_snippet": "Memory leak suspected \u2014 application slowing down every 5 minutes"
+      },
+      {
+        "signal_id": "INC-0031-S2",
+        "source_type": "log",
+        "text_snippet": "ERROR jvm-monitor GC overhead limit exceeded \u2014 heap usage 31%"
+      }
+    ]
+  },
+  {
+    "group_id": "CORR-035",
+    "signal_ids": [
+      "INC-0020-S0",
+      "INC-0020-S1",
+      "INC-0020-S2"
+    ],
+    "predicted_category": "Network Outage",
+    "signal_count": 3,
+    "source_types": [
+      "alert",
+      "log",
+      "ticket"
+    ],
+    "time_span_minutes": 21.71,
+    "avg_similarity": 0.2906,
+    "max_anomaly_score": 0.0255,
+    "confidence_score": 0.6619,
+    "signals_detail": [
+      {
+        "signal_id": "INC-0020-S0",
+        "source_type": "ticket",
+        "text_snippet": "API calls to external partners timing out \u2014 network issue suspected since 11:41"
+      },
+      {
+        "signal_id": "INC-0020-S1",
+        "source_type": "log",
+        "text_snippet": "ERROR tcp-handler Connection reset by peer \u2014 23 retries exhausted"
+      },
+      {
+        "signal_id": "INC-0020-S2",
+        "source_type": "alert",
+        "text_snippet": "CRITICAL: 13 downstream services unreachable \u2014 network partition detected"
+      }
+    ]
+  },
+  {
+    "group_id": "CORR-036",
+    "signal_ids": [
+      "INC-0034-S0",
+      "INC-0034-S1",
+      "INC-0034-S2"
+    ],
+    "predicted_category": "Performance Degradation",
+    "signal_count": 3,
+    "source_types": [
+      "alert",
+      "log",
+      "ticket"
+    ],
+    "time_span_minutes": 8.94,
+    "avg_similarity": 0.394,
+    "max_anomaly_score": 0.0588,
+    "confidence_score": 0.6593,
+    "signals_detail": [
+      {
+        "signal_id": "INC-0034-S0",
+        "source_type": "alert",
+        "text_snippet": "WARNING: memory_usage 39% \u2014 approaching OOM threshold on 96 pods"
+      },
+      {
+        "signal_id": "INC-0034-S1",
+        "source_type": "ticket",
+        "text_snippet": "Application extremely slow since 14:15 \u2014 pages taking 19 seconds to load"
+      },
+      {
+        "signal_id": "INC-0034-S2",
+        "source_type": "log",
+        "text_snippet": "ERROR memory-manager OutOfMemoryError: Java heap space after 20 minutes"
+      }
+    ]
+  },
+  {
+    "group_id": "CORR-037",
+    "signal_ids": [
+      "INC-0026-S0",
+      "INC-0026-S1",
+      "INC-0026-S2"
+    ],
+    "predicted_category": "Deployment Failure",
+    "signal_count": 3,
+    "source_types": [
+      "alert",
+      "log",
+      "ticket"
+    ],
+    "time_span_minutes": 18.32,
+    "avg_similarity": 0.3452,
+    "max_anomaly_score": 0.0255,
+    "confidence_score": 0.6578,
+    "signals_detail": [
+      {
+        "signal_id": "INC-0026-S0",
+        "source_type": "alert",
+        "text_snippet": "CRITICAL: canary deployment showing 44% error rate \u2014 halting rollout"
+      },
+      {
+        "signal_id": "INC-0026-S1",
+        "source_type": "ticket",
+        "text_snippet": "Deployment to prod failed \u2014 application not starting after update at 14:39"
+      },
+      {
+        "signal_id": "INC-0026-S2",
+        "source_type": "log",
+        "text_snippet": "CRITICAL docker-runtime Container exited with code 37 immediately on start"
+      }
+    ]
+  },
+  {
+    "group_id": "CORR-038",
+    "signal_ids": [
+      "INC-0038-S0",
+      "INC-0038-S1",
+      "INC-0038-S2"
+    ],
+    "predicted_category": "Performance Degradation",
+    "signal_count": 3,
+    "source_types": [
+      "alert",
+      "log",
+      "ticket"
+    ],
+    "time_span_minutes": 13.25,
+    "avg_similarity": 0.4065,
+    "max_anomaly_score": 0.0764,
+    "confidence_score": 0.657,
+    "signals_detail": [
+      {
+        "signal_id": "INC-0038-S0",
+        "source_type": "alert",
+        "text_snippet": "CRITICAL: database_query_time_avg 21ms \u2014 92x slower than baseline. Additionally:"
+      },
+      {
+        "signal_id": "INC-0038-S1",
+        "source_type": "ticket",
+        "text_snippet": "API response times unacceptable \u2014 42ms average reported by users since 15:06"
+      },
+      {
+        "signal_id": "INC-0038-S2",
+        "source_type": "log",
+        "text_snippet": "CRITICAL thread-pool 32 threads blocked \u2014 deadlock suspected at 14:21. Additiona"
+      }
+    ]
+  },
+  {
+    "group_id": "CORR-039",
+    "signal_ids": [
+      "INC-0040-S0",
+      "INC-0040-S2"
+    ],
+    "predicted_category": "Performance Degradation",
+    "signal_count": 2,
+    "source_types": [
+      "log",
+      "ticket"
+    ],
+    "time_span_minutes": 19.46,
+    "avg_similarity": 0.3589,
+    "max_anomaly_score": 0.3721,
+    "confidence_score": 0.6489,
+    "signals_detail": [
+      {
+        "signal_id": "INC-0040-S0",
+        "source_type": "log",
+        "text_snippet": "ERROR memory-manager OutOfMemoryError: Java heap space after 10 minutes"
+      },
+      {
+        "signal_id": "INC-0040-S2",
+        "source_type": "ticket",
+        "text_snippet": "Application extremely slow since 09:45 \u2014 pages taking 16 seconds to load"
+      }
+    ]
+  },
+  {
+    "group_id": "CORR-040",
+    "signal_ids": [
+      "INC-0019-S0",
+      "INC-0019-S2"
+    ],
+    "predicted_category": "Network Outage",
+    "signal_count": 2,
+    "source_types": [
+      "alert",
+      "ticket"
+    ],
+    "time_span_minutes": 6.08,
+    "avg_similarity": 0.3396,
+    "max_anomaly_score": 0.2546,
+    "confidence_score": 0.648,
+    "signals_detail": [
+      {
+        "signal_id": "INC-0019-S0",
+        "source_type": "alert",
+        "text_snippet": "WARNING: BGP session dropped with peer 90 \u2014 rerouting traffic. Additionally: Mem"
+      },
+      {
+        "signal_id": "INC-0019-S2",
+        "source_type": "ticket",
+        "text_snippet": "VPN connection dropping every 10 minutes \u2014 unable to work remotely. Additionally"
+      }
+    ]
+  },
+  {
+    "group_id": "CORR-041",
+    "signal_ids": [
+      "INC-0035-S0",
+      "INC-0035-S1",
+      "INC-0035-S2"
+    ],
+    "predicted_category": "Performance Degradation",
+    "signal_count": 3,
+    "source_types": [
+      "alert",
+      "log",
+      "ticket"
+    ],
+    "time_span_minutes": 11.85,
+    "avg_similarity": 0.3159,
+    "max_anomaly_score": 0.0255,
+    "confidence_score": 0.6444,
+    "signals_detail": [
+      {
+        "signal_id": "INC-0035-S0",
+        "source_type": "ticket",
+        "text_snippet": "Dashboard loading very slowly \u2014 timeout errors appearing for heavy reports"
+      },
+      {
+        "signal_id": "INC-0035-S1",
+        "source_type": "alert",
+        "text_snippet": "CRITICAL: cache_hit_rate dropped to 19% \u2014 database under heavy load"
+      },
+      {
+        "signal_id": "INC-0035-S2",
+        "source_type": "log",
+        "text_snippet": "ERROR jvm-monitor GC overhead limit exceeded \u2014 heap usage 7%"
+      }
+    ]
+  },
+  {
+    "group_id": "CORR-042",
+    "signal_ids": [
+      "INC-0043-S0",
+      "INC-0043-S1",
+      "INC-0043-S2"
+    ],
+    "predicted_category": "Security Breach",
+    "signal_count": 3,
+    "source_types": [
+      "alert",
+      "log",
+      "ticket"
+    ],
+    "time_span_minutes": 9.55,
+    "avg_similarity": 0.3279,
+    "max_anomaly_score": 0.0196,
+    "confidence_score": 0.6293,
+    "signals_detail": [
+      {
+        "signal_id": "INC-0043-S0",
+        "source_type": "ticket",
+        "text_snippet": "User reported receiving password reset email they did not request at 18:27"
+      },
+      {
+        "signal_id": "INC-0043-S1",
+        "source_type": "log",
+        "text_snippet": "CRITICAL security-monitor Brute force: 24 auth failures from 97 in 20m"
+      },
+      {
+        "signal_id": "INC-0043-S2",
+        "source_type": "alert",
+        "text_snippet": "ALERT: unusual data access pattern \u2014 23GB exported in 20 minutes"
+      }
+    ]
+  },
+  {
+    "group_id": "CORR-043",
+    "signal_ids": [
+      "INC-0023-S0",
+      "INC-0023-S1",
+      "INC-0023-S2"
+    ],
+    "predicted_category": "Deployment Failure",
+    "signal_count": 3,
+    "source_types": [
+      "alert",
+      "log",
+      "ticket"
+    ],
+    "time_span_minutes": 8.59,
+    "avg_similarity": 0.2826,
+    "max_anomaly_score": 0.0255,
+    "confidence_score": 0.6123,
+    "signals_detail": [
+      {
+        "signal_id": "INC-0023-S0",
+        "source_type": "log",
+        "text_snippet": "ERROR config-loader Failed to parse configuration: invalid YAML at line 38"
+      },
+      {
+        "signal_id": "INC-0023-S1",
+        "source_type": "ticket",
+        "text_snippet": "Production deployment at 09:18 caused service outage \u2014 need rollback"
+      },
+      {
+        "signal_id": "INC-0023-S2",
+        "source_type": "alert",
+        "text_snippet": "ALERT: container startup failures 43 in last 15 minutes after push"
+      }
+    ]
+  },
+  {
+    "group_id": "CORR-044",
+    "signal_ids": [
+      "INC-0039-S1",
+      "INC-0039-S2"
+    ],
+    "predicted_category": "Performance Degradation",
+    "signal_count": 2,
+    "source_types": [
+      "log",
+      "ticket"
+    ],
+    "time_span_minutes": 1.87,
+    "avg_similarity": 0.3119,
+    "max_anomaly_score": 0.0764,
+    "confidence_score": 0.5764,
+    "signals_detail": [
+      {
+        "signal_id": "INC-0039-S1",
+        "source_type": "log",
+        "text_snippet": "WARN cache-manager Redis response time 16ms \u2014 cache performance degraded"
+      },
+      {
+        "signal_id": "INC-0039-S2",
+        "source_type": "ticket",
+        "text_snippet": "Database queries taking 39 seconds \u2014 was 94 seconds yesterday"
+      }
+    ]
+  },
+  {
+    "group_id": "CORR-045",
+    "signal_ids": [
+      "INC-0011-S0",
+      "INC-0011-S1"
+    ],
+    "predicted_category": "Network Outage",
+    "signal_count": 2,
+    "source_types": [
+      "log",
+      "ticket"
+    ],
+    "time_span_minutes": 7.5,
+    "avg_similarity": 0.2511,
+    "max_anomaly_score": 0.0196,
+    "confidence_score": 0.5608,
+    "signals_detail": [
+      {
+        "signal_id": "INC-0011-S0",
+        "source_type": "log",
+        "text_snippet": "CRITICAL router-agent Interface GigabitEthernet0/96 down \u2014 link failure. Additio"
+      },
+      {
+        "signal_id": "INC-0011-S1",
+        "source_type": "ticket",
+        "text_snippet": "VPN connection dropping every 20 minutes \u2014 unable to work remotely"
+      }
+    ]
+  }
+]

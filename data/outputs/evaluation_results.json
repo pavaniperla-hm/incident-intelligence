@@ -1,0 +1,150 @@
+{
+  "dataset": {
+    "total_signals": 150,
+    "categories": [
+      "Authentication Failure",
+      "Network Outage",
+      "Deployment Failure",
+      "Performance Degradation",
+      "Security Breach"
+    ],
+    "source_types": [
+      "alert",
+      "log",
+      "ticket"
+    ],
+    "category_distribution": {
+      "Authentication Failure": 30,
+      "Deployment Failure": 30,
+      "Performance Degradation": 30,
+      "Security Breach": 30,
+      "Network Outage": 30
+    }
+  },
+  "classifier": {
+    "classical": {
+      "backend": "classical",
+      "accuracy": 0.9,
+      "precision": 0.9029,
+      "recall": 0.9,
+      "f1": 0.8965,
+      "classification_report": "                         precision    recall  f1-score   support\n\n Authentication Failure       1.00      0.83      0.91         6\n     Deployment Failure       0.86      1.00      0.92         6\n         Network Outage       0.80      0.67      0.73         6\nPerformance Degradation       1.00      1.00      1.00         6\n        Security Breach       0.86      1.00      0.92         6\n\n               accuracy                           0.90        30\n              macro avg       0.90      0.90      0.90        30\n           weighted avg       0.90      0.90      0.90        30\n",
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          6,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          4,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          6,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          6
+        ]
+      ],
+      "class_names": [
+        "Authentication Failure",
+        "Deployment Failure",
+        "Network Outage",
+        "Performance Degradation",
+        "Security Breach"
+      ]
+    },
+    "transformer": {
+      "backend": "transformer",
+      "accuracy": 0.7333,
+      "precision": 0.73,
+      "recall": 0.7333,
+      "f1": 0.726,
+      "classification_report": "                         precision    recall  f1-score   support\n\n Authentication Failure       0.67      0.67      0.67         6\n     Deployment Failure       0.60      0.50      0.55         6\n         Network Outage       0.80      0.67      0.73         6\nPerformance Degradation       0.75      1.00      0.86         6\n        Security Breach       0.83      0.83      0.83         6\n\n               accuracy                           0.73        30\n              macro avg       0.73      0.73      0.73        30\n           weighted avg       0.73      0.73      0.73        30\n",
+      "confusion_matrix": [
+        [
+          4,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          2,
+          3,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          4,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          6,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          5
+        ]
+      ],
+      "class_names": [
+        "Authentication Failure",
+        "Deployment Failure",
+        "Network Outage",
+        "Performance Degradation",
+        "Security Breach"
+      ]
+    }
+  },
+  "similarity": {
+    "total_pairs": 440,
+    "true_positives": 13,
+    "false_positives": 427,
+    "precision": 0.0295,
+    "avg_score_same_incident": 0.5915,
+    "avg_score_diff_incident": 0.6678
+  },
+  "correlation": {
+    "total_groups": 45,
+    "perfect_groups": 45,
+    "fragmented_groups": 0,
+    "signals_in_groups": 124,
+    "precision": 1.0,
+    "recall": 0.7533,
+    "f1": 0.8593,
+    "avg_confidence_score": 0.7058,
+    "avg_group_size": 2.76,
+    "avg_time_span_minutes": 11.98
+  }
+}

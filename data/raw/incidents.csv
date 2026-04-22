@@ -1,0 +1,151 @@
+signal_id,source_type,category,text,timestamp,incident_group
+INC-0007-S0,log,Authentication Failure,WARN ldap-connector Authentication bind failed for user pool — retrying,2024-01-01 08:23:19.059069,INC-0007
+INC-0007-S2,ticket,Authentication Failure,Cannot access internal portal — getting 401 Unauthorized since this morning,2024-01-01 08:35:01.752175,INC-0007
+INC-0007-S1,alert,Authentication Failure,ALERT: auth_error_rate exceeded threshold — current value 2% up from baseline 97%,2024-01-01 08:37:52.588287,INC-0007
+INC-0021-S0,log,Deployment Failure,WARN rollout-controller Deployment 95 exceeded progress deadline 20m,2024-01-02 03:45:29.790130,INC-0021
+INC-0021-S1,ticket,Deployment Failure,Config change pushed at 18:12 caused database connection failures,2024-01-02 03:50:25.833466,INC-0021
+INC-0021-S2,alert,Deployment Failure,CRITICAL: deployment pipeline 98 failed at stage 36 — rollback triggered,2024-01-02 03:56:13.050221,INC-0021
+INC-0031-S1,alert,Performance Degradation,ALERT: cpu_utilization at 41% on 90 nodes — autoscaling triggered. Additionally: All microservices returning 503 — suspected network partition in cluster,2024-01-02 13:32:57.480736,INC-0031
+INC-0031-S2,log,Performance Degradation,ERROR jvm-monitor GC overhead limit exceeded — heap usage 31%,2024-01-02 13:49:16.243715,INC-0031
+INC-0031-S0,ticket,Performance Degradation,Memory leak suspected — application slowing down every 5 minutes,2024-01-02 13:53:50.314166,INC-0031
+INC-0041-S0,alert,Security Breach,WARNING: 9 API calls from unrecognised IP range in last 30 minutes,2024-01-03 03:18:41.422420,INC-0041
+INC-0041-S1,ticket,Security Breach,Unexpected admin account created at 04:04 — security team please investigate. Additionally: WARN rollout-controller Deployment 99 exceeded progress deadline 15m,2024-01-03 03:25:56.668491,INC-0041
+INC-0041-S2,log,Security Breach,CRITICAL ids-system Port scan detected from external IP 94 at 22:25,2024-01-03 03:27:28.646584,INC-0041
+INC-0038-S0,alert,Performance Degradation,CRITICAL: database_query_time_avg 21ms — 92x slower than baseline. Additionally: Cannot reach external services since 01:35 — complete outage for team,2024-01-04 00:30:01.877138,INC-0038
+INC-0038-S1,ticket,Performance Degradation,API response times unacceptable — 42ms average reported by users since 15:06,2024-01-04 00:37:04.768500,INC-0038
+INC-0038-S2,log,Performance Degradation,CRITICAL thread-pool 32 threads blocked — deadlock suspected at 14:21. Additionally: SSO login broken for 9 users — IT please investigate urgently,2024-01-04 00:43:16.845639,INC-0038
+INC-0015-S0,log,Network Outage,ERROR dns-resolver NXDOMAIN for internal service mesh — 5 retries failed. Additionally: ALERT: token_validation_failures spiked to 34 per minute — normal is 93,2024-01-04 22:20:34.307896,INC-0015
+INC-0015-S1,ticket,Network Outage,API calls to external partners timing out — network issue suspected since 02:56,2024-01-04 22:21:03.988361,INC-0015
+INC-0015-S2,alert,Network Outage,WARNING: BGP session dropped with peer 98 — rerouting traffic,2024-01-04 22:29:14.023923,INC-0015
+INC-0028-S2,log,Deployment Failure,ERROR kubernetes PodInitializing timeout after 30m — CrashLoopBackOff,2024-01-05 03:37:54.411575,INC-0028
+INC-0028-S0,alert,Deployment Failure,CRITICAL: kubernetes rollout failed — 15 pods in CrashLoopBackOff. Additionally: Possible data exfiltration — large upload to external endpoint at 14:26,2024-01-05 03:39:18.966016,INC-0028
+INC-0028-S1,ticket,Deployment Failure,Config change pushed at 12:57 caused database connection failures,2024-01-05 04:01:24.660500,INC-0028
+INC-0034-S2,log,Performance Degradation,ERROR memory-manager OutOfMemoryError: Java heap space after 20 minutes,2024-01-05 14:21:34.518206,INC-0034
+INC-0034-S1,ticket,Performance Degradation,Application extremely slow since 14:15 — pages taking 19 seconds to load,2024-01-05 14:23:27.832918,INC-0034
+INC-0034-S0,alert,Performance Degradation,WARNING: memory_usage 39% — approaching OOM threshold on 96 pods,2024-01-05 14:30:30.628191,INC-0034
+INC-0049-S2,alert,Security Breach,WARNING: 36 API calls from unrecognised IP range in last 5 minutes,2024-01-05 15:14:16.434421,INC-0049
+INC-0049-S1,log,Security Breach,WARN data-monitor Anomalous export: 36MB from sensitive table in 20m,2024-01-05 15:24:04.477825,INC-0049
+INC-0049-S0,ticket,Security Breach,Possible data exfiltration — large upload to external endpoint at 22:25,2024-01-05 15:29:41.926995,INC-0049
+INC-0032-S1,alert,Performance Degradation,ALERT: throughput dropped from 96 to 27 requests/sec — capacity issue,2024-01-06 00:53:26.954275,INC-0032
+INC-0032-S2,ticket,Performance Degradation,System unusable during peak hours — 42 second response times,2024-01-06 01:05:55.249113,INC-0032
+INC-0032-S0,log,Performance Degradation,WARN connection-pool All 91 connections in use — requests queuing,2024-01-06 01:11:42.790362,INC-0032
+INC-0012-S1,alert,Network Outage,CRITICAL: packet_loss_rate 37% on core router — threshold is 97%. Additionally: ALERT: auth_error_rate exceeded threshold — current value 28% up from baseline 92%,2024-01-06 17:09:09.952367,INC-0012
+INC-0012-S0,ticket,Network Outage,Internet connectivity down in office building 94 — no network access,2024-01-06 17:18:53.219610,INC-0012
+INC-0012-S2,log,Network Outage,WARN load-balancer upstream 5 of 96 nodes marked unhealthy. Additionally: Cannot access internal portal — getting 401 Unauthorized since this morning,2024-01-06 17:20:11.267789,INC-0012
+INC-0023-S2,alert,Deployment Failure,ALERT: container startup failures 43 in last 15 minutes after push,2024-01-06 18:18:32.760729,INC-0023
+INC-0023-S0,log,Deployment Failure,ERROR config-loader Failed to parse configuration: invalid YAML at line 38,2024-01-06 18:21:11.426850,INC-0023
+INC-0023-S1,ticket,Deployment Failure,Production deployment at 09:18 caused service outage — need rollback,2024-01-06 18:27:08.159271,INC-0023
+INC-0020-S1,log,Network Outage,ERROR tcp-handler Connection reset by peer — 23 retries exhausted,2024-01-06 19:06:05.423973,INC-0020
+INC-0020-S0,ticket,Network Outage,API calls to external partners timing out — network issue suspected since 11:41,2024-01-06 19:20:11.688523,INC-0020
+INC-0020-S2,alert,Network Outage,CRITICAL: 13 downstream services unreachable — network partition detected,2024-01-06 19:27:47.737204,INC-0020
+INC-0024-S1,alert,Deployment Failure,ALERT: error_rate spiked to 16% immediately after release v94,2024-01-07 09:55:35.062307,INC-0024
+INC-0024-S0,ticket,Deployment Failure,Deployment to prod failed — application not starting after update at 16:42,2024-01-07 10:00:16.813747,INC-0024
+INC-0024-S2,log,Deployment Failure,ERROR kubernetes PodInitializing timeout after 10m — CrashLoopBackOff,2024-01-07 10:07:10.942324,INC-0024
+INC-0017-S1,log,Network Outage,ERROR tcp-handler Connection reset by peer — 29 retries exhausted,2024-01-08 12:51:14.096186,INC-0017
+INC-0017-S2,ticket,Network Outage,All microservices returning 503 — suspected network partition in cluster,2024-01-08 13:02:04.670799,INC-0017
+INC-0017-S0,alert,Network Outage,CRITICAL: 4 downstream services unreachable — network partition detected. Additionally: ERROR helm-deploy Release 92 failed: timed out waiting for condition,2024-01-08 13:06:58.131728,INC-0017
+INC-0002-S2,ticket,Authentication Failure,Password reset not working — users locked out of system since 03:59,2024-01-09 08:31:38.376681,INC-0002
+INC-0002-S1,log,Authentication Failure,ERROR AuthService TokenValidationException: JWT signature invalid at 02:24. Additionally: WARN connection-pool All 90 connections in use — requests queuing,2024-01-09 08:36:04.913414,INC-0002
+INC-0002-S0,alert,Authentication Failure,WARNING: 19 failed authentication attempts detected in 10 minute window,2024-01-09 08:36:55.556928,INC-0002
+INC-0033-S0,log,Performance Degradation,WARN connection-pool All 98 connections in use — requests queuing,2024-01-10 01:17:38.177098,INC-0033
+INC-0033-S2,ticket,Performance Degradation,Application extremely slow since 11:40 — pages taking 29 seconds to load,2024-01-10 01:19:51.929805,INC-0033
+INC-0033-S1,alert,Performance Degradation,ALERT: throughput dropped from 95 to 2 requests/sec — capacity issue,2024-01-10 01:28:55.817161,INC-0033
+INC-0035-S2,log,Performance Degradation,ERROR jvm-monitor GC overhead limit exceeded — heap usage 7%,2024-01-10 18:10:46.365355,INC-0035
+INC-0035-S1,alert,Performance Degradation,CRITICAL: cache_hit_rate dropped to 19% — database under heavy load,2024-01-10 18:13:31.664046,INC-0035
+INC-0035-S0,ticket,Performance Degradation,Dashboard loading very slowly — timeout errors appearing for heavy reports,2024-01-10 18:22:37.203138,INC-0035
+INC-0029-S0,ticket,Deployment Failure,Config change pushed at 07:17 caused database connection failures,2024-01-11 13:16:42.353755,INC-0029
+INC-0029-S2,alert,Deployment Failure,ALERT: error_rate spiked to 36% immediately after release v99. Additionally: ERROR access-control Unauthorised access to /api/admin/users — blocked at 21:01,2024-01-11 13:18:04.737718,INC-0029
+INC-0037-S2,alert,Performance Degradation,CRITICAL: cache_hit_rate dropped to 13% — database under heavy load. Additionally: Security scanner flagged 39 critical vulnerabilities in production at 16:38,2024-01-11 13:25:17.385631,INC-0037
+INC-0037-S0,ticket,Performance Degradation,Dashboard loading very slowly — timeout errors appearing for heavy reports,2024-01-11 13:36:14.814073,INC-0037
+INC-0029-S1,log,Deployment Failure,ERROR helm-deploy Release 96 failed: timed out waiting for condition,2024-01-11 13:36:59.575020,INC-0029
+INC-0037-S1,log,Performance Degradation,WARN connection-pool All 91 connections in use — requests queuing,2024-01-11 13:41:59.203917,INC-0037
+INC-0039-S2,ticket,Performance Degradation,Database queries taking 39 seconds — was 94 seconds yesterday,2024-01-13 00:38:11.760683,INC-0039
+INC-0039-S1,log,Performance Degradation,WARN cache-manager Redis response time 16ms — cache performance degraded,2024-01-13 00:40:04.257356,INC-0039
+INC-0039-S0,alert,Performance Degradation,ALERT: cpu_utilization at 21% on 99 nodes — autoscaling triggered. Additionally: CRITICAL: datacenter east-96 connectivity lost — failover initiated,2024-01-13 00:45:43.166794,INC-0039
+INC-0030-S0,ticket,Deployment Failure,Deployment to prod failed — application not starting after update at 12:20,2024-01-13 20:44:14.567669,INC-0030
+INC-0030-S2,log,Deployment Failure,ERROR helm-deploy Release 91 failed: timed out waiting for condition,2024-01-13 20:54:47.835354,INC-0030
+INC-0030-S1,alert,Deployment Failure,CRITICAL: canary deployment showing 19% error rate — halting rollout,2024-01-13 20:56:52.185390,INC-0030
+INC-0045-S0,log,Security Breach,CRITICAL security-monitor Brute force: 17 auth failures from 99 in 10m,2024-01-14 03:26:57.430125,INC-0045
+INC-0045-S2,alert,Security Breach,WARNING: 9 API calls from unrecognised IP range in last 10 minutes,2024-01-14 03:44:31.823417,INC-0045
+INC-0045-S1,ticket,Security Breach,Unusual file access pattern detected — 7 sensitive files accessed in 10m,2024-01-14 03:49:26.313246,INC-0045
+INC-0042-S0,alert,Security Breach,ALERT: SQL injection pattern detected in 22 requests — WAF blocking,2024-01-15 19:32:36.005881,INC-0042
+INC-0042-S2,ticket,Security Breach,Suspicious login from foreign IP at 21:52 — account may be compromised,2024-01-15 19:32:57.556052,INC-0042
+INC-0042-S1,log,Security Breach,ERROR waf-handler SQL injection blocked: malicious payload in request at 21:53,2024-01-15 19:46:37.892940,INC-0042
+INC-0008-S1,ticket,Authentication Failure,Password reset not working — users locked out of system since 00:38,2024-01-16 05:32:20.115688,INC-0008
+INC-0008-S0,alert,Authentication Failure,ALERT: auth_error_rate exceeded threshold — current value 12% up from baseline 95%,2024-01-16 05:51:18.840292,INC-0008
+INC-0008-S2,log,Authentication Failure,ERROR sso-service Connection refused to identity-provider at 09:15. Additionally: ALERT: DNS resolution failures 33% — external connectivity degraded,2024-01-16 05:52:14.935454,INC-0008
+INC-0046-S0,ticket,Security Breach,Unusual file access pattern detected — 17 sensitive files accessed in 20m,2024-01-16 06:32:51.642080,INC-0046
+INC-0046-S2,alert,Security Breach,CRITICAL: privilege escalation attempt detected for user account at 13:21,2024-01-16 06:35:57.869574,INC-0046
+INC-0046-S1,log,Security Breach,ERROR access-control Unauthorised access to /api/admin/users — blocked at 16:47,2024-01-16 06:44:52.303462,INC-0046
+INC-0006-S0,alert,Authentication Failure,ALERT: auth_error_rate exceeded threshold — current value 45% up from baseline 92%,2024-01-16 06:53:07.444768,INC-0006
+INC-0006-S1,log,Authentication Failure,CRITICAL auth-middleware NullPointerException in validateToken() line 847,2024-01-16 07:03:14.228041,INC-0006
+INC-0006-S2,ticket,Authentication Failure,Cannot access internal portal — getting 401 Unauthorized since this morning,2024-01-16 07:13:03.322762,INC-0006
+INC-0036-S0,alert,Performance Degradation,WARNING: memory_usage 7% — approaching OOM threshold on 90 pods,2024-01-17 15:53:43.342113,INC-0036
+INC-0036-S2,log,Performance Degradation,WARN connection-pool All 96 connections in use — requests queuing,2024-01-17 15:57:22.323129,INC-0036
+INC-0036-S1,ticket,Performance Degradation,API response times unacceptable — 21ms average reported by users since 21:37,2024-01-17 15:57:26.949853,INC-0036
+INC-0040-S0,log,Performance Degradation,ERROR memory-manager OutOfMemoryError: Java heap space after 10 minutes,2024-01-19 15:10:24.597417,INC-0040
+INC-0040-S1,alert,Performance Degradation,ALERT: cpu_utilization at 37% on 92 nodes — autoscaling triggered. Additionally: SSO login broken for 40 users — IT please investigate urgently,2024-01-19 15:20:07.684938,INC-0040
+INC-0040-S2,ticket,Performance Degradation,Application extremely slow since 09:45 — pages taking 16 seconds to load,2024-01-19 15:29:52.226316,INC-0040
+INC-0001-S1,ticket,Authentication Failure,Users unable to log in since 18:27 — receiving invalid credentials error. Additionally: ALERT: network_latency_ms spiked to 40ms — baseline 98ms,2024-01-20 04:23:54.065558,INC-0001
+INC-0001-S2,log,Authentication Failure,WARN auth-gateway 401 Unauthorized /api/v2/login — 43 occurrences in 30m,2024-01-20 04:34:28.075172,INC-0001
+INC-0001-S0,alert,Authentication Failure,ALERT: auth_error_rate exceeded threshold — current value 8% up from baseline 92%,2024-01-20 04:45:32.530955,INC-0001
+INC-0050-S2,log,Security Breach,WARN audit-logger Privilege escalation: user 96 accessed admin endpoint. Additionally: ERROR memory-manager OutOfMemoryError: Java heap space after 10 minutes,2024-01-21 12:50:18.672334,INC-0050
+INC-0050-S1,alert,Security Breach,CRITICAL: 22 failed login attempts from IP 90 — brute force detected,2024-01-21 12:53:23.748524,INC-0050
+INC-0050-S0,ticket,Security Breach,Unusual file access pattern detected — 8 sensitive files accessed in 5m,2024-01-21 13:03:24.698604,INC-0050
+INC-0011-S1,ticket,Network Outage,VPN connection dropping every 20 minutes — unable to work remotely,2024-01-22 16:50:11.107544,INC-0011
+INC-0011-S2,alert,Network Outage,ALERT: DNS resolution failures 43% — external connectivity degraded. Additionally: WARN audit-logger Privilege escalation: user 91 accessed admin endpoint,2024-01-22 16:55:02.835264,INC-0011
+INC-0011-S0,log,Network Outage,CRITICAL router-agent Interface GigabitEthernet0/96 down — link failure. Additionally: CRITICAL auth-middleware NullPointerException in validateToken() line 847,2024-01-22 16:57:41.297113,INC-0011
+INC-0022-S2,log,Deployment Failure,ERROR helm-deploy Release 96 failed: timed out waiting for condition,2024-01-23 02:53:53.320244,INC-0022
+INC-0022-S1,ticket,Deployment Failure,CI/CD pipeline deployment stuck for 15 minutes — manual intervention needed,2024-01-23 02:56:42.040883,INC-0022
+INC-0022-S0,alert,Deployment Failure,CRITICAL: deployment pipeline 95 failed at stage 41 — rollback triggered,2024-01-23 03:01:13.724446,INC-0022
+INC-0019-S2,ticket,Network Outage,VPN connection dropping every 10 minutes — unable to work remotely. Additionally: Unexpected admin account created at 07:14 — security team please investigate,2024-01-23 11:38:01.464736,INC-0019
+INC-0019-S1,log,Network Outage,WARN service-mesh Circuit breaker OPEN for 8 services simultaneously,2024-01-23 11:38:24.054995,INC-0019
+INC-0019-S0,alert,Network Outage,WARNING: BGP session dropped with peer 90 — rerouting traffic. Additionally: Memory leak suspected — application slowing down every 10 minutes,2024-01-23 11:44:06.176648,INC-0019
+INC-0043-S2,alert,Security Breach,ALERT: unusual data access pattern — 23GB exported in 20 minutes,2024-01-23 16:38:01.135122,INC-0043
+INC-0043-S0,ticket,Security Breach,User reported receiving password reset email they did not request at 18:27,2024-01-23 16:43:06.397132,INC-0043
+INC-0043-S1,log,Security Breach,CRITICAL security-monitor Brute force: 24 auth failures from 97 in 20m,2024-01-23 16:47:34.008693,INC-0043
+INC-0025-S1,log,Deployment Failure,WARN rollout-controller Deployment 90 exceeded progress deadline 5m,2024-01-24 01:24:12.628394,INC-0025
+INC-0025-S0,ticket,Deployment Failure,CI/CD pipeline deployment stuck for 20 minutes — manual intervention needed,2024-01-24 01:24:50.343348,INC-0025
+INC-0025-S2,alert,Deployment Failure,CRITICAL: kubernetes rollout failed — 35 pods in CrashLoopBackOff,2024-01-24 01:32:40.475380,INC-0025
+INC-0048-S1,ticket,Security Breach,Security scanner flagged 11 critical vulnerabilities in production at 15:02. Additionally: CRITICAL: canary deployment showing 8% error rate — halting rollout,2024-01-24 06:36:40.206087,INC-0048
+INC-0048-S2,log,Security Breach,CRITICAL ids-system Port scan detected from external IP 90 at 23:09,2024-01-24 06:39:53.451447,INC-0048
+INC-0048-S0,alert,Security Breach,ALERT: SQL injection pattern detected in 26 requests — WAF blocking,2024-01-24 06:40:06.812701,INC-0048
+INC-0013-S2,alert,Network Outage,CRITICAL: datacenter east-92 connectivity lost — failover initiated. Additionally: CRITICAL: login_success_rate dropped from 99% to 6% in last 10 minutes,2024-01-24 13:27:40.956137,INC-0013
+INC-0013-S1,log,Network Outage,ERROR tcp-handler Connection reset by peer — 36 retries exhausted. Additionally: WARNING: api_response_time_p99 is 32ms — SLA threshold is 99ms,2024-01-24 13:30:09.568384,INC-0013
+INC-0013-S0,ticket,Network Outage,Internet connectivity down in office building 93 — no network access,2024-01-24 13:41:48.356857,INC-0013
+INC-0047-S2,alert,Security Breach,ALERT: SQL injection pattern detected in 17 requests — WAF blocking,2024-01-25 14:53:34.578166,INC-0047
+INC-0047-S0,ticket,Security Breach,User reported receiving password reset email they did not request at 14:34,2024-01-25 14:56:02.894431,INC-0047
+INC-0047-S1,log,Security Breach,ERROR access-control Unauthorised access to /api/admin/users — blocked at 12:29,2024-01-25 15:09:28.637022,INC-0047
+INC-0003-S0,log,Authentication Failure,WARN ldap-connector Authentication bind failed for user pool — retrying. Additionally: Production deployment at 07:55 caused service outage — need rollback,2024-01-25 21:12:48.391888,INC-0003
+INC-0003-S2,alert,Authentication Failure,ALERT: auth_error_rate exceeded threshold — current value 24% up from baseline 95%,2024-01-25 21:16:57.356477,INC-0003
+INC-0003-S1,ticket,Authentication Failure,Cannot access internal portal — getting 401 Unauthorized since this morning,2024-01-25 21:31:08.055384,INC-0003
+INC-0018-S1,alert,Network Outage,CRITICAL: packet_loss_rate 15% on core router — threshold is 95%,2024-01-26 01:11:10.691661,INC-0018
+INC-0018-S0,log,Network Outage,WARN load-balancer upstream 21 of 90 nodes marked unhealthy,2024-01-26 01:17:49.923561,INC-0018
+INC-0018-S2,ticket,Network Outage,API calls to external partners timing out — network issue suspected since 17:56,2024-01-26 01:18:51.047079,INC-0018
+INC-0027-S0,ticket,Deployment Failure,CI/CD pipeline deployment stuck for 15 minutes — manual intervention needed,2024-01-26 20:29:36.755877,INC-0027
+INC-0027-S2,alert,Deployment Failure,ALERT: error_rate spiked to 23% immediately after release v94,2024-01-26 20:30:05.034492,INC-0027
+INC-0027-S1,log,Deployment Failure,WARN rollout-controller Deployment 93 exceeded progress deadline 15m,2024-01-26 20:34:25.123452,INC-0027
+INC-0005-S0,log,Authentication Failure,ERROR sso-service Connection refused to identity-provider at 04:15,2024-01-27 13:11:47.200809,INC-0005
+INC-0005-S1,ticket,Authentication Failure,VPN authentication failing for remote workers — JWT token expired error,2024-01-27 13:20:45.469199,INC-0005
+INC-0005-S2,alert,Authentication Failure,CRITICAL: SSO service returning 401 errors — 25% of requests failing,2024-01-27 13:23:15.041284,INC-0005
+INC-0026-S2,log,Deployment Failure,CRITICAL docker-runtime Container exited with code 37 immediately on start,2024-01-28 12:38:41.014330,INC-0026
+INC-0026-S0,alert,Deployment Failure,CRITICAL: canary deployment showing 44% error rate — halting rollout,2024-01-28 12:48:40.665405,INC-0026
+INC-0026-S1,ticket,Deployment Failure,Deployment to prod failed — application not starting after update at 14:39,2024-01-28 12:57:00.307914,INC-0026
+INC-0004-S1,alert,Authentication Failure,CRITICAL: login_success_rate dropped from 93% to 4% in last 15 minutes,2024-01-29 02:25:07.974259,INC-0004
+INC-0004-S0,log,Authentication Failure,ERROR oauth2-handler Token expired: issued 10 minutes ago exceeds limit. Additionally: Security scanner flagged 37 critical vulnerabilities in production at 07:43,2024-01-29 02:31:35.115453,INC-0004
+INC-0004-S2,ticket,Authentication Failure,Password reset not working — users locked out of system since 22:20,2024-01-29 02:35:57.538240,INC-0004
+INC-0014-S1,alert,Network Outage,CRITICAL: datacenter east-95 connectivity lost — failover initiated,2024-01-29 06:02:03.550577,INC-0014
+INC-0014-S2,ticket,Network Outage,All microservices returning 503 — suspected network partition in cluster,2024-01-29 06:03:35.583547,INC-0014
+INC-0014-S0,log,Network Outage,ERROR tcp-handler Connection reset by peer — 7 retries exhausted,2024-01-29 06:11:32.670212,INC-0014
+INC-0044-S1,alert,Security Breach,WARNING: 28 API calls from unrecognised IP range in last 5 minutes. Additionally: CRITICAL docker-runtime Container exited with code 42 immediately on start,2024-01-29 08:43:24.715982,INC-0044
+INC-0044-S0,log,Security Breach,CRITICAL security-monitor Brute force: 18 auth failures from 95 in 15m. Additionally: WARN query-executor Slow query detected: 44ms for SELECT on orders table,2024-01-29 08:54:05.705774,INC-0044
+INC-0044-S2,ticket,Security Breach,Suspicious login from foreign IP at 06:17 — account may be compromised,2024-01-29 08:55:33.163689,INC-0044
+INC-0009-S1,alert,Authentication Failure,WARNING: 35 failed authentication attempts detected in 30 minute window,2024-01-30 08:14:13.504920,INC-0009
+INC-0009-S2,ticket,Authentication Failure,Password reset not working — users locked out of system since 23:44,2024-01-30 08:16:43.382049,INC-0009
+INC-0009-S0,log,Authentication Failure,WARN ldap-connector Authentication bind failed for user pool — retrying,2024-01-30 08:22:40.513002,INC-0009
+INC-0016-S0,log,Network Outage,WARN service-mesh Circuit breaker OPEN for 8 services simultaneously,2024-01-30 14:51:49.537605,INC-0016
+INC-0016-S1,alert,Network Outage,CRITICAL: packet_loss_rate 37% on core router — threshold is 91%. Additionally: ERROR jvm-monitor GC overhead limit exceeded — heap usage 23%,2024-01-30 14:53:33.496901,INC-0016
+INC-0016-S2,ticket,Network Outage,All microservices returning 503 — suspected network partition in cluster,2024-01-30 15:01:06.214520,INC-0016
+INC-0010-S1,ticket,Authentication Failure,Password reset not working — users locked out of system since 07:00. Additionally: CRITICAL: packet_loss_rate 23% on core router — threshold is 90%,2024-01-30 20:32:13.418490,INC-0010
+INC-0010-S2,alert,Authentication Failure,ALERT: auth_error_rate exceeded threshold — current value 44% up from baseline 94%,2024-01-30 20:43:55.983362,INC-0010
+INC-0010-S0,log,Authentication Failure,ERROR oauth2-handler Token expired: issued 20 minutes ago exceeds limit. Additionally: WARNING: health checks failing for 39 of 90 new pods after deploy,2024-01-30 20:44:18.014749,INC-0010
